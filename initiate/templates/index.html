@@ -5,6 +5,21 @@
     <title>index_page</title>
 </head>
 <body>
+    {% if error %}
+        <h1>아이디와 비밀번호를 입력하세요</h1>
 
+    {% endif %}
+    <form method='GET' action="{% url 'initiate:testlogin' %}">
+        {%  csrf_token %}
+        <div class="input_ID">
+            <label>ID:</label>
+            <input type="text" name="id">
+        </div>
+        <div class="input_password">
+            <label>PW:</label>
+            <input type="text" name="pw">
+        </div>
+        <input class="btn" type="submit" value="complete">
+    </form>
 </body>
 </html>

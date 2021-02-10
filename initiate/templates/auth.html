@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<h1>로그인페이지</h1>
+{% if user.is_authenticated %}
+    <div>로그인성공!</div>
+    {{ user.username }}님 환영합니다.
+{% else %}
+    <form action="" method="POST">
+    {%  csrf_token %}
+    <div><input name="name" type="text"></div>
+    <div><input name="pw" type="password" ></div>
+    <div><input type="submit" value="login"></div>
+
+    </form>
+{% endif %}
 </body>
 </html>

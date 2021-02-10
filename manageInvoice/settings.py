@@ -123,3 +123,5 @@ STATIC_URL = '/static/'
 
 # STATIC FILE 경로 추가
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
+
+AUTH_USER_MODEL='initiate.User'

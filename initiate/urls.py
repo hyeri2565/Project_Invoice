@@ -1,6 +1,10 @@
 from django.conf.urls import url
 from . import views
+from django.urls import path
 
+app_name='initiate'
 urlpatterns=[
-    url('',views.index,name='index'),
+    path('',views.index,name='index'),
+    path('login/',views.loginTest,name='testlogin'),
+    path('auth/',views.login_view,name='auth')
 ]
