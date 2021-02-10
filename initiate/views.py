@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect
+
 # Create your views here.
 
 def index(request):
@@ -29,3 +31,8 @@ def login_view(request):
 #실제 db안에있는 값을 입력하면 성공처리
 #login(re,user)해주면 로그인된상태 ->표시해주는 작업들어가야함
 # 로그인 성공상태 =>user.is_authenticated
+
+
+def logout_view(request):
+    logout(request)
+    return redirect("initiate:auth")
