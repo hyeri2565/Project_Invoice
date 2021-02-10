@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import redirect
-
+from .models import User
 # Create your views here.
 
 def index(request):
@@ -36,3 +36,18 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect("initiate:auth")
+
+def signup_view(request):
+    if request.method=="POST":
+        print(request.POST)
+        username=request.POST['name']
+        password=request.POST['pw']
+        email=request.POST['email']
+        company=request.POST['company_id']
+        companyCellular=request.POST['company_cp']
+        user=User.objects.create_user(username,email,password)
+        user.company_id=company
+        user.companyCellular=companyCellular
+        user.save()
+        return redirect('initiate:auth')
+    return render(request,'signup.html')

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdbbd0bf-d36a-442b-af5e-791262859134" name="Default Changelist" comment="first commit">
+    <list default="true" id="bdbbd0bf-d36a-442b-af5e-791262859134" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/initiate/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initiate/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initiate/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/initiate/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/initiate/templates/auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/initiate/templates/auth.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/initiate/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/initiate/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/initiate/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/initiate/views.py" afterDir="false" />
@@ -90,7 +93,7 @@
       <workItem from="1612837673577" duration="1066000" />
       <workItem from="1612838845561" duration="1637000" />
       <workItem from="1612841189740" duration="5917000" />
-      <workItem from="1612932701681" duration="7378000" />
+      <workItem from="1612932701681" duration="12592000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612839160671</created>
@@ -99,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612839160671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="auth+=logout/logout_view/outauth url (for logout)">
+      <created>1612940441341</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612940441341</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="auth+=logout/logout_view/outauth url (for logout)" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth+=logout/logout_view/outauth url (for logout)" />
   </component>
 </project>
